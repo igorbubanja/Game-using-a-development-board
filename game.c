@@ -12,10 +12,10 @@
 #include "ir_uart.h"
 #include "tinygl.h"
 #include "../fonts/font5x7_1.h"
-#include "module1.h"
-#include "module1.c"
-#include "module2.h"
-#include "module2.c"
+#include "display.h"
+#include "display.c"
+#include "deck.h"
+#include "deck.c"
 
 #define PACER_RATE 500
 #define MESSAGE_RATE 1
