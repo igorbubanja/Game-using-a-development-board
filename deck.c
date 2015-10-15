@@ -1,8 +1,7 @@
 /* Authors: Igor Bubanja, Danny Kim */
-/* File: game.c */
+/* File: deck.c */
 /* Purpose: A module used in game.c that is used to randomise the array of numbers (or deck) */
- /* Date: 15 October 2015 */
-
+/* Date: 15 October 2015 */
 
 #include "system.h"
 #include "pacer.h"
@@ -11,7 +10,6 @@
 #include "ir_uart.h"
 #include "tinygl.h"
 #include "../fonts/font5x7_1.h"
-#include <stdlib.h>
 
 /* A utility function to swap two integers */
 void swap(int *a, int *b)
@@ -33,7 +31,8 @@ void randomise(int deck[], int n)
        need to run for the first element that's why i > 0 */
     int i = n - 1;
     
-    while (i > 0) {
+    while (i > 0)
+    {
         /* Pick a random index from 0 to i (NOTE: This method isn't truly random as TCNT1 will be the same each time the program is run,
            but because each player can have an many turns as they want each round will be different) */
         int j = TCNT1 % (i + 1);

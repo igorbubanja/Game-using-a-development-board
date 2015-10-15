@@ -1,7 +1,7 @@
-# File:   Makefile
-# Author: M. P. Hayes, UCECE
-# Date:   12 Sep 2010
-# Descr:  Makefile for game
+# File:    Makefile
+# Authors: Igor Bubanja and Danny Kim
+# Date:    15 October 2015
+# Descr:   Makefile for game
 
 # Definitions.
 CC = avr-gcc
@@ -57,6 +57,7 @@ pacer.o: ../../utils/pacer.c ../../drivers/avr/system.h ../../drivers/avr/timer.
 
 tinygl.o: ../../utils/tinygl.c ../../drivers/avr/system.h ../../drivers/display.h ../../utils/font.h ../../utils/tinygl.h
 	$(CC) -c $(CFLAGS) $< -o $@
+
 
 
 
